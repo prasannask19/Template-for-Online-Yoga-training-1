@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        .head1{
+            background-color:rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top:0%;
+            }
+           .head1 a{
+                text-decoration:none ;
+                color: rgb(255, 255, 255);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+           
+          .head1 a:hover{
+                color: tomato;
+            }
+            #abss{
+                color: blue;
+            }
+            .foot a{
+                text-decoration:none ;
+                color: rgb(255, 254, 254);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+           .min h2{
+                color: rgb(15, 127, 86);
+                margin-top: 5%;
+                margin-left: 5%;
+                font-size: 38px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="head1">
+            {% load static %} <img src="{% static '\images\Untitled.png' %}" alt="none" width="150" height="75">
+            <h3><a id="hm" href="http://127.0.0.1:8000/" >HOME</a> &nbsp;  &nbsp; &nbsp;<a href="http://127.0.0.1:8000/sgn" id="sgn">SIGNUP</a> &nbsp;  &nbsp; &nbsp; <a href="http://127.0.0.1:8000/crs" id="crs">COURSES</a> &nbsp; &nbsp;  &nbsp;  <a href="http://127.0.0.1:8000/abs" id="abss">ABOUT US</a>
+                 &nbsp; &nbsp; &nbsp; <a href="http://127.0.0.1:8000/con" id="cs">CONTACT US</a> &nbsp; &nbsp; &nbsp;</h3>
+    </div>
+    <div style="margin-top: 5%;margin-left:10%;margin-right: 10%;"class="min">
+        <h2><br>
+            Our Team</h2>
+       {% load static %} <img src="{% static '\images\abs.jpg' %}" alt="" width="90%" height="90%">
+       <br>
+       <h2>Our organization</h2>
+       <h4>Ordinary Yoga Classes is one of the finest online yoga training institute which is successful in providing 
+        the best for spreading importance of yoga for everyone , it strives hard so that all their clients gets the best yoga 
+    training possible.....<br> </h4>
+    <h2>Our Vision</h2>
+       <h4>Everyone gets an healthy mind and body....</h4>
+       <h2>Our mission</h2>
+       <div class="imgs" style="display:flex;justify-content:space-between;margin-left: -8%;">
+       <figure>
+        {% load static %}<img src="{% static '\images\i.jpg' %}" alt="">
+        <figcaption style="text-align: center;">implement a healthy and easy environment for Yoga</figcaption>
+       </figure>
+       <figure>
+        {% load static %}<img src="{% static '\images\Download.jpg' %}" alt="" width="612" height="365">
+        <figcaption style="text-align: center;">Implement New Technology for Better learning</figcaption>
+       </figure>
+    </div>
+    </div>
+    <h1 style="margin-left:10%;">What we Provide</h1>
+    <div style="display:flex;justify-content:space-between ;margin-left: 10%;">
+        <ul id="ps">
+            <li><bold>Accessible : </bold>Our courses are designed for all who want to learn and pursue Yoga in its purest form 
+                and is open to homemakers, working professionals, artists of all ages and ethnicity.</li>
+                <li><bold>Authentic : </bold>Our belief lies in teaching yoga from authentic sources to fit today’s audience and lifestyle, 
+                    free from any dilution to the classical method.</li>
+                    <li><bold>Great value for the time : </bold>Effort and money you would invest in the course. You take back, good health, yoga knowledge including 
+                        spreading the same through teaching yoga to the community.</li>         
+        </ul>
+        
+    </div>
+    <div class="foot" style="background-color:green;margin-top: 5%;">
+                
+        <div class="fot" style="display:flex ;justify-content:center">
+            <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                <li><h2 style="color: aliceblue;margin-top: 10%;"><br>Information</h2></li>
+                <li>&nbsp;</li>
+                <li><a href="">Blogs</a></li>
+                <li>&nbsp;</li>
+                <li><a href="">FAQs</a></li>
+            </ul>
+            <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                <li><h2 style="color: aliceblue;margin-top: 10%;"><br> Academy</h2></li>
+                <li>&nbsp;</li>
+                <li><a href="">Testimonials</a></li>
+                <li>&nbsp;</li>
+                <li><a href="">Alumni</a></li>
+            </ul>
+            <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                <li><h2 style="color: aliceblue;margin-top: 10%;"><br> About us</h2></li>
+                <li>&nbsp;</li>
+                <li><a href="">Teachers</a></li>
+                <li>&nbsp;</li>
+                <li><a href="">Founders</a></li>
+                <li>&nbsp;</li>
+                <li><a href="">Contributors</a></li>
+            </ul>
+    </div>
+    <h2 style="color:aliceblue;text-align: center;">Phone number : +91 1234567890<br></h2>
+    <h2 style= "color:aliceblue;text-align: center;">Email : abcd@gmail.com<br><br></h2>
+    </div>
+    
+    </body>
+</html>

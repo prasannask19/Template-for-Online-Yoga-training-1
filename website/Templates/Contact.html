@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             .head1{
+            background-color:rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top:0%;
+            }
+           .head1 a{
+                text-decoration:none ;
+                color: rgb(255, 255, 255);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+           
+          .head1 a:hover{
+                color: tomato;
+            }
+            #cs
+            {
+                color: blue;
+            }
+            .budi
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+            .foot a{
+                text-decoration:none ;
+                color: rgb(255, 254, 254);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            #bt:hover{
+                background-color: rgb(0, 165, 165);
+            }
+            
+        </style>
+        </head>
+        <body>
+            <header>
+                <div class="head1">
+                        {% load static %} <img src="{% static '\images\Untitled.png' %}" alt="none" width="150" height="75">
+                        <h3><a id="hm" href="http://127.0.0.1:8000/" >HOME</a> &nbsp;  &nbsp; &nbsp;<a href="http://127.0.0.1:8000/sgn" id="sgn">SIGNUP</a> &nbsp;  &nbsp; &nbsp; <a href="http://127.0.0.1:8000/crs" id="crs">COURSES</a> &nbsp; &nbsp;  &nbsp;  <a href="http://127.0.0.1:8000/abs">ABOUT US</a>
+                             &nbsp; &nbsp; &nbsp; <a href="http://127.0.0.1:8000/con" id="cs">CONTACT US</a> &nbsp; &nbsp; &nbsp;</h3>
+                            </div>
+                <div style="margin-top: 5%;background-color: rgb(233, 255, 255);">
+                    <h1><br></h1>
+                    <h1 style="margin-left: 10%;font-family:Georgia, 'Times New Roman', Times, serif;color:rgb(98, 98, 98)">Contact us</h1>
+                    <h1><br></h1>
+
+                </div>
+            </header>
+                <div class="budi">
+                <div class="bud" style="margin-left: 10%;">
+                    <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Contact details</h3>
+                 <div style="display: flex;justify-content: space-between;">
+                    {% load static %}  <img src="{% static '\images\ph.png' %}" alt="" width="4%" height="4%">
+                    <h3 style="margin-right: 70%;margin-top: -1%;">+91 1234567890</h3>
+                 </div>
+                 <hr style="width:60%;text-align:left;margin-left:0">
+                <div style="display: flex;justify-content: space-between;">
+                    {% load static %}  <img src="{% static '\images\em.png' %}" alt="" width="4%" height="4%">
+                    <h3 style="margin-right: 70%;margin-top: -1%;">abc@gmail.com</h3>
+                </div>
+                <hr style="width:60%;text-align:left;margin-left:0">
+                <div style="display: flex;justify-content: space-between;">
+                    <h3 style="color:rgb(82, 82, 82);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Address: &nbsp; </h3>
+                    <h3 style="margin-right: 46%;margin-left:2% ;">&nbsp;Vampire mansion, Street 420, 
+                    Area 69, Antartica, zip code:99999</h3>
+                </div>
+                </div>
+            <div class="frm" style="margin-right:18%;font-size: 20px;font-weight:bold">
+                <form method="post" action="\con">
+                    {% csrf_token %}
+                    <h4 style="font: 1em sans-serif;font-size: 20px;">Post your Doubts here</h4>
+                    <label style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Your Name *<br> </label>
+                    <input type="text" style="width:360px;height:30px" name="name"><br><br>
+                    <label style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Your Phone number * </label>
+                    <input type="number" style="width:360px;height:30px;"name="phno"><br><br>
+                    <label style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Email * </label><br>
+                    <input type="email" style="width:360px;height:30px;"name="eml"><br><br>
+                    <label style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Your Doubt * </label><br>
+                    <input type="text" style="width:360px;height:80px;"name="desc"><br><br>
+                    <input type="submit" value="Send" id="bt" style="font-family:Georgia, 'Times New Roman', Times, serif;
+                    padding:10px;font-size:18px;border-radius: 10px;background-color: aqua;margin-left: 24%;cursor: pointer;">
+                </form>
+            </div> 
+                </div>
+                <div class="foot" style="background-color:green;margin-top: 5%;">
+                
+                    <div class="fot" style="display:flex ;justify-content:center">
+                        <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                            <li><h2 style="color: aliceblue;margin-top: 10%;"><br>Information</h2></li>
+                            <li>&nbsp;</li>
+                            <li><a href="">Blogs</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                        <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                            <li><h2 style="color: aliceblue;margin-top: 10%;"><br> Academy</h2></li>
+                            <li>&nbsp;</li>
+                            <li><a href="">Testimonials</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="">Alumni</a></li>
+                        </ul>
+                        <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                            <li><h2 style="color: aliceblue;margin-top: 10%;"><br> About us</h2></li>
+                            <li>&nbsp;</li>
+                            <li><a href="">Teachers</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="">Founders</a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="">Contributors</a></li>
+                        </ul>
+                </div>
+                <h2 style="color:aliceblue;text-align: center;">Phone number : +91 1234567890<br></h2>
+                <h2 style= "color:aliceblue;text-align: center;">Email : abcd@gmail.com<br><br></h2>
+                </div>
+            
+        </body>
+        </html>

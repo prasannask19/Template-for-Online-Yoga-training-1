@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .head1{
+            background-color:rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top:0%;
+            }
+           .head1 a{
+                text-decoration:none ;
+                color: rgb(255, 255, 255);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+           
+          .head1 a:hover{
+                color: tomato;
+            }
+            .foot a{
+                text-decoration:none ;
+                color: rgb(255, 254, 254);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+            .backg{
+      background-image: url( "{% static 'images/i.webp' %}");
+      background-repeat: no-repeat;
+      background-size: 100% ;
+     background-attachment:initial;}
+         button{
+                background-color: aliceblue;
+        }
+        #hm
+        {
+            color: blue;
+        }
+        .secdiv{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top:4%;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="head1">
+            
+                    {% load static %} <img src="{% static '\images\Untitled.png' %}" alt="none" width="150" height="75">
+                    <h3><a id="hm" href="http://127.0.0.1:8000/" >HOME</a> &nbsp;  &nbsp; &nbsp;<a href="http://127.0.0.1:8000/sgn" id="sgn">SIGNUP</a> &nbsp;  &nbsp; &nbsp; <a href="http://127.0.0.1:8000/crs" id="crs">COURSES</a> &nbsp; &nbsp;  &nbsp;  <a href="http://127.0.0.1:8000/abs">ABOUT US</a>
+                         &nbsp; &nbsp; &nbsp; <a href="http://127.0.0.1:8000/con" id="cs">CONTACT US</a> &nbsp; &nbsp; &nbsp;</h3>
+            </div>
+            <div class="backg">
+                <h1 id="hel"style="color:aliceblue; margin-left: 12%;font-size: 64px;font-family:Arial, Helvetica, sans-serif;">
+               <br><br> Online Yoga Class          
+                </h1>
+                <h2 style="color:aliceblue; margin-left: 10%;font-size: 32px;font-family:Arial, Helvetica, sans-serif;">
+                    Available for Everyone,Anytime,Anywhere  
+                </h2>
+                <br><br>
+                <button class="but1" style="margin-left: 25%;background-color: rgb(51, 36, 51);font-size: 20px;padding: 16px 32px;
+                text-align: center;border-radius: 50px;font-family:monospace;color: rgb(229, 236, 242);transition-duration: 0.4s;
+  cursor: pointer;margin-bottom: 5%;font-weight: 400;">
+                 <a href="http://127.0.0.1:8000/sgn" style="text-decoration:none ;color: rgb(255, 255, 255);">Signup</a>
+                </button>
+                <br>
+            </div>
+        </header>
+            <section class="secbody">
+                
+                    <h1 style="text-align: center;font-family:sans-serif;font-size: 41px;">Learn and Practice Yoga with us</h1>
+                    <h3 style="text-align:center;font-family:Verdana, Geneva, Tahoma, sans-serif;font-style: oblique;color: rgb(122, 117, 134);">Here you will find Best Yoga lessons 
+                        by our expert Mentors from<br> Live classes and Pre recorded videos </h3>
+                <div class="secdiv">
+                        <img src="{% static '\images\br.jpg' %}" alt="" width="400px"height="300px">
+                        <h4 style="font-size: 24px;color: rgb(94, 73, 73);margin-left: 5%;text-align: center;">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Breathing exercise <br><br><i>
+                            Our Classes Provide various Programs , we also provide breathing Exercises,We provide 
+                            Best tutors and mentors for Breathing exercise practice </i>
+                        </h4>
+                </div>
+                <div class="secdiv">
+                    <h4 style="font-size: 24px;color: rgb(94, 73, 73);margin-right: 5%;text-align: center;">
+                        Healthy Lifestyle <br><br><i>
+                        Our Classes Provide various Programs , we also provide breathing Exercises,We provide 
+                        Best tutors and mentors for Breathing exercise practice </i>
+                    </h4>
+                    <img src="{% static '\images\hl.jpg' %}" alt="" width="400px"height="300px">
+            </div>
+            <div class="secdiv">
+                <img src="{% static '\images\hl.webp' %}" alt="" width="400px"height="300px">
+                <h4 style="font-size: 24px;color: rgb(94, 73, 73);margin-left: 5%;text-align: center;">
+                     Other Healthy Exercises <br><br><i>
+                    Our Classes Provide various Programs , we also provide breathing Exercises,We provide 
+                    Best tutors and mentors for Breathing exercise practice </i>
+                </h4>
+        </div>
+        
+            <h1 style="font-size:45px;text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 200;">
+                Over 1000+ members of our organization has been satisfied by our Yoga lessons 
+            </h1>
+            <div class="foot" style="background-color:green;">
+                
+                <div class="fot" style="display:flex ;justify-content:center">
+                    <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                        <li><h2 style="color: aliceblue;margin-top: 10%;"><br>Information</h2></li>
+                        <li>&nbsp;</li>
+                        <li><a href="">Blogs</a></li>
+                        <li>&nbsp;</li>
+                        <li><a href="">FAQs</a></li>
+                    </ul>
+                    <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                        <li><h2 style="color: aliceblue;margin-top: 10%;"><br> Academy</h2></li>
+                        <li>&nbsp;</li>
+                        <li><a href="">Testimonials</a></li>
+                        <li>&nbsp;</li>
+                        <li><a href="">Alumni</a></li>
+                    </ul>
+                    <ul style="color:azure;font-size:18px;list-style:none;margin-left:10%;margin-right:10%;">
+                        <li><h2 style="color: aliceblue;margin-top: 10%;"><br> About us</h2></li>
+                        <li>&nbsp;</li>
+                        <li><a href="">Teachers</a></li>
+                        <li>&nbsp;</li>
+                        <li><a href="">Founders</a></li>
+                        <li>&nbsp;</li>
+                        <li><a href="">Contributors</a></li>
+                    </ul>
+            </div>
+            <h2 style="color:aliceblue;text-align: center;">Phone number : +91 1234567890<br></h2>
+            <h2 style= "color:aliceblue;text-align: center;">Email : abcd@gmail.com<br><br></h2>
+            </div>
+            </section>
+            
+    </body>
+</html>
